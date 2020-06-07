@@ -18,8 +18,7 @@ cur = conn.cursor()
 
 # A function that takes in a PostgreSQL query and outputs a pandas database
 def create_pandas_table(sql_query, database=conn):
-    table = pd.read_sql_query(sql_query, database)
-    return table
+    return pd.read_sql_query(sql_query, database)
 
 
 # Utilize the create_pandas_table function to create a Pandas data frame
